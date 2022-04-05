@@ -1,3 +1,23 @@
-<h1>El total es {{total}}
+<style>
+  #caja-general {
+    display: grid;
+    justify-content: center;
+  }
 
-</h1>
+  #linea {
+    width: 500px;
+    border: 0.25pt solid lightblue;
+  }
+
+  #cabecera-banco {
+    margin: 0 auto;
+  }
+</style>
+
+<div id="caja-general">
+  <div>
+    <img id="cabecera-banco" title="cabecera del banco" src="img/BCC.jpg" alt="Cabecera del banco">
+  </div>
+  <hr id="linea">
+  <h1>El total del interés en tal plazo es de ${{total}}</h1>
+</div>

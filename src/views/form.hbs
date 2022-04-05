@@ -1,14 +1,58 @@
-<h1>Página de cálculo</h1>
-<form action="/form" method="POST">
-  <label for="capital">Capital:</label>
-  <input type="number" id="capital" name="capital" placeholder="3500000"> <br>
+<style>
+  
+  #caja-general {
+    display: grid;
+    justify-content: center;
+  }
+  form {
+    padding: 40px;
+    width: 500px;
+    display: grid;
+    justify-content: center;
+  }
 
-  <label for="interest">Interés (%):</label>
-  <input type="number" id="interest" name="interest" step="0.1" placeholder="3.5"> <br>
+  h2, label{
+    text-align: center;
+  }
 
-  <label for="years">Años:</label>
-  <input type="number" id="years" name="years" placeholder="2"> <br>
+  input{
+    margin: 10px;
+  }
 
-  <input type="submit">
+  #linea {
+    width: 500px;
+    border: 0.25pt solid lightblue;
+  }
 
-</form>
+  input[type="submit"]{
+    right:0;
+    display: inline-block;
+  }
+
+  #cabecera-banco {
+    margin: 0 auto;
+  }
+
+</style>
+
+<div id="caja-general">
+  <div>
+    <img id="cabecera-banco" title="cabecera del banco" src="img/BCC.jpg" alt="Cabecera del banco">
+  </div>
+  <h2>Calcule su interés</h2>
+  <hr id="linea">
+  <form action="/form" method="POST">
+    <label for="capital">Capital:</label>
+    <input type="number" id="capital" name="capital" placeholder="3500000"> <br>
+
+    <label for="interest">Interés (%):</label>
+    <input type="number" id="interest" name="interest" step="0.1" placeholder="3.5"> <br>
+
+    <label for="years">Años:</label>
+    <input type="number" id="years" name="years" placeholder="2"> <br>
+
+    <input type="submit" value="veámos">
+
+  </form>
+
+</div>
